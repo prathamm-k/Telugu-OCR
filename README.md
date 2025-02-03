@@ -26,8 +26,8 @@ This project offers a groundbreaking solution for digitizing Telugu content, mak
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/telugu-ocr-dataset.git
-   cd telugu-ocr-dataset
+   git clone https://github.com/prathamm-k/Telugu-OCR.git
+   cd Telugu-OCR
    ```
 
 2. Install dependencies:
@@ -39,21 +39,23 @@ This project offers a groundbreaking solution for digitizing Telugu content, mak
 
 ## Usage
 
-1. Place your PDF files in the `input` directory.
+1. Place your PDF files in the `ocr_pdf_input` directory.
 2. Run the preprocessing and OCR pipeline:
    ```bash
-   python process_pdfs.py
+   python OCR.py
    ```
-3. Extracted datasets will be saved in the `output` directory.
+3. Extracted datasets will be saved in the `ocr_output_files` directory.
 
 ## Project Structure
 
 ```
-├── input/             # Directory for input PDFs or images
-├── output/            # Directory for processed datasets
-├── src/               # Source code for the OCR pipeline
-├── requirements.txt   # Python dependencies
-└── README.md          # Project documentation
+├── OCR/
+├── books/
+├── ocr_input_img/
+├── ocr_output_files/
+├── ocr_pdf_input/
+├── requirements.txt
+└── README.md
 ```
 
 ## Future Enhancements
