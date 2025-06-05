@@ -28,44 +28,10 @@ Before you begin, ensure you have the following installed:
 ## 🛠️ Installation
 
 1. Clone the repository:
-<<<<<<< HEAD
    ```bash
    git clone https://github.com/prathamm-k/Telugu-OCR.git
    cd Telugu-OCR
    ```
-
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Install Tesseract OCR and add it to your system's PATH. For instructions, see [Tesseract Installation Guide](https://github.com/tesseract-ocr/tesseract).
-
-## Usage
-
-1. Place your PDF files in the `ocr_pdf_input` directory.
-2. Run the preprocessing and OCR pipeline:
-   ```bash
-   python OCR.py
-   ```
-3. Extracted datasets will be saved in the `ocr_output_files` directory.
-
-## Project Structure
-
-```
-├── OCR/
-├── books/
-├── ocr_input_img/
-├── ocr_output_files/
-├── ocr_pdf_input/
-├── requirements.txt
-└── README.md
-=======
-```bash
-git clone https://github.com/prathamkairamkonda/telugu-ocr.git
-cd telugu-ocr
->>>>>>> a937814 (	new file:   requirements.txt)
-```
 
 2. Choose your setup method:
 
@@ -101,7 +67,7 @@ pip install -r requirements.txt
 
 1. Start the Streamlit application:
 ```bash
-streamlit run OCR/streamlit_app.py
+streamlit run streamlit_app.py
 ```
 
 2. Open your web browser and navigate to the URL shown in the terminal (typically http://localhost:8501)
@@ -116,12 +82,14 @@ streamlit run OCR/streamlit_app.py
 
 ```
 .
-├── OCR/
-│   ├── OCR.py              # Core OCR functionality
-│   └── streamlit_app.py    # Streamlit web interface
-├── books/                  # Sample PDF files
-├── requirements.txt        # Project dependencies
-└── README.md              # Project documentation
+├── sample/
+│   └──test.pdf         # test pdf
+├── OCR.py              # Core OCR functionality
+├── streamlit_app.py    # Streamlit web interface
+├── requirements.txt    # Project dependencies
+├── setup.bat          #project setup script for windows
+├── setup.sh           #project setup script for Ubuntu/Debian (Linux)
+└── README.md          # Project documentation
 ```
 
 ## 🔧 Technologies Used
