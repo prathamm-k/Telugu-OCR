@@ -63,6 +63,9 @@ source ocr_env/bin/activate  # On Linux/Mac
 pip install -r requirements.txt
 ```
 
+3. Install Tesseract OCR and add it to your system's PATH.
+   For instructions, see [Tesseract Installation Guide](https://github.com/tesseract-ocr/tesseract).
+
 ## 🚀 Usage
 
 1. Start the Streamlit application:
