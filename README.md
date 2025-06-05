@@ -1,30 +1,34 @@
-# Telugu OCR for High-Accuracy Dataset Creation
+# Telugu OCR Web Application 🔍
 
-This repository contains a robust OCR (Optical Character Recognition) solution tailored for converting large PDF collections, particularly books with images, into structured datasets. The project focuses on the Telugu language, achieving an impressive 91% text recognition accuracy, surpassing other Telugu OCR tools currently available.
+[![Python](https://img.shields.io/badge/python-v3.12-blue.svg)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/streamlit-1.x-FF4B4B.svg)](https://streamlit.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Features
+A powerful and user-friendly Optical Character Recognition (OCR) web application built with Streamlit, specifically designed for Telugu text extraction from PDFs and images. This application makes it easy to digitize Telugu documents while maintaining high accuracy and providing a seamless user experience.
 
-- **High Accuracy**: Achieves 91% text accuracy for Telugu text, significantly improving on existing solutions.
-- **PDF to Dataset Conversion**: Processes large PDF files, including books with embedded images, to generate structured datasets.
-- **Image Preprocessing**: Uses advanced techniques like resizing, grayscale conversion, shadow removal, and thresholding for enhanced OCR performance.
-- **Automated Multi-Image Handling**: Streamlines the process for handling and processing multiple image files efficiently.
-- **Custom OCR Workflow**: Integrates OpenCV for preprocessing and Tesseract for text recognition.
+## 🌟 Key Features
 
-## Impact
+- 📝 Extract text from PDF files and images
+- 📄 Support for multi-page PDF documents
+- 🖼️ Image preprocessing for better OCR accuracy
+- 📊 Real-time processing status and progress tracking
+- 📈 Display statistics (page count, characters, words)
+- 💾 Download extracted text as a file
+- 🎨 Clean and intuitive user interface
 
-This project offers a groundbreaking solution for digitizing Telugu content, making it invaluable for researchers, developers, and institutions focusing on preserving and utilizing Telugu literature and historical texts. It bridges the gap between low-resource language processing and modern dataset requirements.
+## 📋 Prerequisites
 
-## Requirements
+Before you begin, ensure you have the following installed:
+- Python 3.12 or higher
+- Poppler (required for PDF processing)
+  - Ubuntu/Debian: `sudo apt-get install poppler-utils`
+  - macOS: `brew install poppler`
+  - Windows: Download from [Poppler for Windows](http://blog.alivate.com.au/poppler-windows/)
 
-- Python 3.8+
-- Libraries: 
-  - OpenCV
-  - Tesseract OCR
-  - NumPy
-
-## Installation
+## 🛠️ Installation
 
 1. Clone the repository:
+<<<<<<< HEAD
    ```bash
    git clone https://github.com/prathamm-k/Telugu-OCR.git
    cd Telugu-OCR
@@ -56,25 +60,110 @@ This project offers a groundbreaking solution for digitizing Telugu content, mak
 ├── ocr_pdf_input/
 ├── requirements.txt
 └── README.md
+=======
+```bash
+git clone https://github.com/prathamkairamkonda/telugu-ocr.git
+cd telugu-ocr
+>>>>>>> a937814 (	new file:   requirements.txt)
 ```
 
-## Future Enhancements
+2. Choose your setup method:
 
-- **Language Expansion**: Adapt the OCR pipeline for other low-resource languages.
-- **Model Training**: Integrate custom models to improve accuracy further.
-- **GUI/Cloud Deployment**: Provide a user-friendly interface and deploy the solution on cloud platforms.
+### Automatic Setup (Recommended)
 
-## Contributions
+#### For Linux/macOS:
+```bash
+chmod +x setup.sh
+./setup.sh
+```
 
-Contributions are welcome! Please fork the repository and submit a pull request with your enhancements or fixes.
+#### For Windows:
+```bash
+setup.bat
+```
 
-## License
+### Manual Setup
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+1. Create a virtual environment:
+```bash
+python -m venv ocr_env
+source ocr_env/bin/activate  # On Linux/Mac
+# or
+.\ocr_env\Scripts\activate  # On Windows
+```
 
-## Contact
+2. Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-For questions or collaboration opportunities, please reach out:
-- **Name**: Pratham Kairamkonda
-- **Email**: kairamkondapratham@gmail.com
-- **LinkedIn**: [linkedin.com/in/pratham-kairamkonda-616442287](https://linkedin.com/in/pratham-kairamkonda-616442287)
+## 🚀 Usage
+
+1. Start the Streamlit application:
+```bash
+streamlit run OCR/streamlit_app.py
+```
+
+2. Open your web browser and navigate to the URL shown in the terminal (typically http://localhost:8501)
+
+3. Upload a PDF file or image containing Telugu text
+
+4. Wait for the OCR process to complete
+
+5. View the extracted text and download it as a text file
+
+## 📁 Project Structure
+
+```
+.
+├── OCR/
+│   ├── OCR.py              # Core OCR functionality
+│   └── streamlit_app.py    # Streamlit web interface
+├── books/                  # Sample PDF files
+├── requirements.txt        # Project dependencies
+└── README.md              # Project documentation
+```
+
+## 🔧 Technologies Used
+
+- Python
+- Streamlit
+- pdf2image
+- PIL (Python Imaging Library)
+- OCR Engine
+- Other supporting libraries
+
+## 🤝 Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📈 Future Improvements
+
+- Add support for more Indian languages
+- Implement batch processing
+- Enhance text accuracy with advanced preprocessing
+- Add text post-processing options
+- Support for more input formats
+- Integration with cloud storage services
+- API endpoint for programmatic access
+- Docker containerization
+
+## ⭐ Show your support
+
+Give a ⭐️ if this project helped you! It means a lot.
+
+## 📩 Contact
+
+For any queries or suggestions, feel free to reach out:
+
+Email: kairamkondapratham@gmail.com
+
+## 📜 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
